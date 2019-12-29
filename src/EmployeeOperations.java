@@ -46,7 +46,7 @@ public class EmployeeOperations {
 			
 		int num = scan.nextInt();
 	
-		if(num > 5) {
+		if(num > 5 || num < 5) {
      
 		 switch (num) {
 	        case 1:
@@ -71,10 +71,11 @@ public class EmployeeOperations {
 	        case 5: 
 	        	ExitSystem();
 	        	break;
-	        
+	        default:
+	        	System.out.println("Please enter a number from 1-5 only.");
 	        	
 			}
-		 System.out.println("Please choose an option from 1 to 5 only.");
+		
 		 }
 		 
 		}catch(InputMismatchException e) {
